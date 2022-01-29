@@ -355,7 +355,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../images/hero-bg.jpg") top center;
   background-size: cover;
   position: relative;
   padding: 0;
@@ -523,7 +523,7 @@ section {
   margin: 0 0 0 60px;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 18px;
   color: #2e4b5e;
 }
 .about .count-box a {
@@ -659,10 +659,11 @@ section {
 # About Boxes
 --------------------------------------------------------------*/
 .about-boxes {
-  background: url("../img/about-boxes-bg.jpg") center top no-repeat fixed;
+  background: url("../images/about-boxes-bg.jpg") center top no-repeat fixed;
   background-size: cover;
   padding: 60px 0 30px 0;
   position: relative;
+  
 }
 .about-boxes::before {
   content: "";
@@ -683,6 +684,7 @@ section {
   border: 0;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
+  
 }
 .about-boxes .card-icon {
   text-align: center;
@@ -727,31 +729,12 @@ section {
     background-attachment: scroll;
   }
 }
+.about-boxes .card-img-top{
+  
+  max-width: 500px;
+}
 
-/*--------------------------------------------------------------
-# Clients
---------------------------------------------------------------*/
-.clients {
-  background: #f0f4f8;
-  padding: 15px 0;
-  text-align: center;
-}
-.clients img {
-  max-width: 45%;
-  transition: all 0.4s ease-in-out;
-  display: inline-block;
-  padding: 15px 0;
-  filter: grayscale(100);
-}
-.clients img:hover {
-  filter: none;
-  transform: scale(1.15);
-}
-@media (max-width: 768px) {
-  .clients img {
-    max-width: 40%;
-  }
-}
+
 
 /*--------------------------------------------------------------
 # Features
